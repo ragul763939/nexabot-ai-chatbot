@@ -11,11 +11,12 @@ from nlp.text_cleaning import tokenize, bag_of_words, stem
 
 app = Flask(__name__, template_folder='../frontend')
 
-model     = pickle.load(open('model/chatbot_model.pkl', 'rb'))
-all_words = pickle.load(open('model/all_words.pkl',     'rb'))
-tags      = pickle.load(open('model/tags.pkl',          'rb'))
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+model     = pickle.load(open(os.path.join(BASE,'model/chatbot_model.pkl'), 'rb'))
+all_words = pickle.load(open(os.path.join(BASE,'model/all_words.pkl'), 'rb'))
+tags      = pickle.load(open(os.path.join(BASE,'model/tags.pkl'), 'rb'))
 
-with open('dataset/intents.json') as f:
+with open(os.path.join(BASE,'dataset/intents.json')) as f:
     intents = json.load(f)
 
 def get_response(user_message):
@@ -48,5 +49,5 @@ def chat():
     })
 
 if __name__ == '__main__':
-    print('NexaBot is running at http://127.0.0.1:8000')
-    app.run(debug=True, port=8000)
+    import os
+    port = int(os.environ.get('PORT', 8000)); app.run(host='0.0.0.0', port=port)

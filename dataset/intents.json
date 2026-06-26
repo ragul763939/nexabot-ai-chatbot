@@ -1,0 +1,541 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good evening",
+        "What's up", "Howdy", "Hi there", "Greetings", "Sup",
+        "Good afternoon", "Hiya", "Hello there", "Hey bot"
+      ],
+      "responses": [
+        "Hello! I'm your College Assistant. How can I help you today?",
+        "Hey there! Ask me anything about college life, exams, or career!",
+        "Hi! Great to see you. What do you need help with today?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you", "See you later", "Take care",
+        "I'm leaving", "Catch you later", "Later", "Farewell", "Good night"
+      ],
+      "responses": [
+        "Goodbye! All the best for your studies!",
+        "See you soon! Keep studying hard!",
+        "Bye! Feel free to come back anytime you need help."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful", "Thanks a lot",
+        "Much appreciated", "Cheers", "Thank you so much", "Thx", "Ty"
+      ],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "Glad I could help! All the best!",
+        "Anytime! Let me know if you need anything else."
+      ]
+    },
+
+    {
+      "tag": "identity",
+      "patterns": [
+        "Who are you?", "What are you?", "Tell me about yourself",
+        "What can you do?", "Are you a bot?", "What is your name?",
+        "Introduce yourself"
+      ],
+      "responses": [
+        "I'm NexaBot — your AI-powered College Assistant! I can help with exams, career advice, college life, and more.",
+        "I'm an AI chatbot built with Python NLP. I'm here to assist college students with academics, placements, and daily queries."
+      ]
+    },
+
+    {
+      "tag": "exam_tips",
+      "patterns": [
+        "How to study for exams?", "Exam tips", "How to prepare for exams",
+        "Study tips", "How to score good marks?", "How to pass exams?",
+        "Tips for exam preparation", "Best way to study"
+      ],
+      "responses": [
+        "Here are top exam tips: 1) Make a study schedule, 2) Review past papers, 3) Take short breaks, 4) Avoid cramming the night before, 5) Stay hydrated and sleep well!",
+        "To prepare well: Start early, break topics into small parts, use flashcards, and practice writing answers. Consistency beats last-minute studying!"
+      ]
+    },
+
+    {
+      "tag": "time_management",
+      "patterns": [
+        "How to manage time?", "Time management tips", "I cannot manage my time",
+        "How to balance studies and fun?", "I waste too much time",
+        "How to be productive?", "Productivity tips for students"
+      ],
+      "responses": [
+        "Try the Pomodoro technique: Study for 25 minutes, then take a 5-minute break. Repeat 4 times, then take a longer break. It really works!",
+        "Use a planner or app to schedule your day. Prioritize important tasks first, limit social media during study hours, and always set deadlines for yourself."
+      ]
+    },
+
+    {
+      "tag": "attendance",
+      "patterns": [
+        "How much attendance is required?", "Attendance rules",
+        "What is minimum attendance?", "Can I sit for exams with low attendance?",
+        "Attendance percentage", "Is 75% attendance compulsory?"
+      ],
+      "responses": [
+        "Most colleges require a minimum of 75% attendance to sit for exams. Some colleges allow 65% with medical proof. Always check your college specific rules!",
+        "75% attendance is the standard requirement in most Indian universities. Check with your college office for exact rules and any medical exemptions."
+      ]
+    },
+
+    {
+      "tag": "backlog",
+      "patterns": [
+        "I have a backlog", "What is a backlog?", "How to clear backlogs?",
+        "Failed in exam", "I failed a subject", "How to handle arrears?",
+        "Arrear exam tips"
+      ],
+      "responses": [
+        "Do not worry! Many students clear backlogs. Focus on understanding basics, practice previous year papers, and seek help from seniors or teachers. You can do it!",
+        "A backlog just means you need to retake a subject. Use the extra time to deeply understand the concepts. Many successful people had backlogs — it is not the end!"
+      ]
+    },
+
+    {
+      "tag": "cgpa",
+      "patterns": [
+        "What is CGPA?", "How is CGPA calculated?", "What is GPA?",
+        "How to improve CGPA?", "What is a good CGPA for placements?",
+        "CGPA to percentage", "How to calculate percentage from CGPA?"
+      ],
+      "responses": [
+        "CGPA is the average of all your semester grade points. Most companies require a minimum CGPA of 6.0 or 7.0 for campus placements.",
+        "To convert CGPA to percentage: multiply your CGPA by 9.5. For example, 8.0 CGPA = 76%. To improve CGPA, focus on internal marks and assignment submissions!"
+      ]
+    },
+
+    {
+      "tag": "placement_preparation",
+      "patterns": [
+        "How to prepare for placements?", "Placement tips", "Campus placement advice",
+        "How to crack campus interviews?", "What companies visit campus?",
+        "How to get placed?", "Placement preparation guide"
+      ],
+      "responses": [
+        "Start placement prep early: 1) Build strong DSA skills, 2) Practice aptitude tests, 3) Improve communication, 4) Build projects for your resume, 5) Do mock interviews. Start in 3rd year!",
+        "For placements: Focus on coding skills, aptitude practice, group discussion skills, and have at least 2 strong projects on your resume."
+      ]
+    },
+
+    {
+      "tag": "resume_tips",
+      "patterns": [
+        "How to make a resume?", "Resume tips", "What to put in resume?",
+        "Resume for fresher", "How long should a resume be?",
+        "Resume format for college students", "Best resume format"
+      ],
+      "responses": [
+        "For a fresher resume: Keep it to 1 page, include education, skills, projects, internships, and certifications. Use a clean format — no photos or fancy colors for MNC applications.",
+        "Key resume sections: Contact info, Objective, Education, Technical Skills, Projects, Internships, Certifications, and Extra-curricular activities."
+      ]
+    },
+
+    {
+      "tag": "internship",
+      "patterns": [
+        "How to get an internship?", "Internship tips", "Where to find internships?",
+        "Best internship websites", "How to apply for internships?",
+        "Internship for college students", "Free internship"
+      ],
+      "responses": [
+        "Find internships on: LinkedIn, Internshala, Naukri, LetsIntern, AngelList. Apply early, tailor your resume for each role, and follow up after applying!",
+        "To get internships: Build a LinkedIn profile, work on small projects to show skills, apply on Internshala, and reach out to alumni in your field. Do not wait for 3rd year — start in 1st year!"
+      ]
+    },
+
+    {
+      "tag": "higher_studies",
+      "patterns": [
+        "Should I do MBA or job?", "Higher studies after engineering",
+        "What is MTech?", "Should I do MS abroad?", "GRE preparation",
+        "GATE exam tips", "How to apply for MS in USA?",
+        "Masters after BTech"
+      ],
+      "responses": [
+        "After BTech, you can: 1) Get a job, 2) Do MTech via GATE, 3) Do MS abroad via GRE/IELTS, 4) Do MBA via CAT/GMAT. Choose based on your interests and long-term career goals!",
+        "For MS abroad: Start GRE prep in 3rd year, maintain good CGPA, build research projects, and get strong recommendation letters. Target universities based on your GRE score."
+      ]
+    },
+
+    {
+      "tag": "coding_help",
+      "patterns": [
+        "How to learn coding?", "Where to learn programming?",
+        "Best coding websites", "How to improve coding skills?",
+        "Coding tips for beginners", "How to learn DSA?",
+        "Data structures and algorithms"
+      ],
+      "responses": [
+        "Best coding platforms: LeetCode for DSA, HackerRank for practice, CodeChef for competitions, GeeksForGeeks for concepts, GitHub for projects. Start with Python or C++!",
+        "To improve coding: Practice 1 problem daily, learn time and space complexity, master arrays, strings, trees, and graphs. Consistency over 6 months will make you job-ready!"
+      ]
+    },
+
+    {
+      "tag": "project_ideas",
+      "patterns": [
+        "Project ideas for college", "Final year project ideas",
+        "Mini project ideas", "AI project ideas for students",
+        "Good projects for resume", "What projects should I build?",
+        "Project ideas for placement"
+      ],
+      "responses": [
+        "Top project ideas: 1) AI Chatbot like this one, 2) Student Result Prediction ML model, 3) Face Attendance System, 4) Job Portal Website, 5) Expense Tracker App. Pick one that interests you!",
+        "For MNC placements, build: a full-stack web app, an ML model with real data, or an API-based project. Host it on GitHub and deploy it live — that is what impresses interviewers!"
+      ]
+    },
+
+    {
+      "tag": "python_learning",
+      "patterns": [
+        "How to learn Python?", "Python for beginners",
+        "Best Python tutorials", "Where to learn Python free?",
+        "Python basics", "Is Python easy to learn?"
+      ],
+      "responses": [
+        "Python is the easiest language to start with! Free resources: Python.org official tutorial, CS50P on edX, Automate the Boring Stuff free book, and YouTube channels like Corey Schafer.",
+        "Start Python with: variables, loops, functions, lists, dictionaries, and file handling. Once comfortable, move to libraries like NumPy, Pandas, and Flask for projects!"
+      ]
+    },
+
+    {
+      "tag": "web_development",
+      "patterns": [
+        "How to learn web development?", "Frontend vs backend",
+        "What is HTML CSS JavaScript?", "How to build a website?",
+        "Web dev roadmap", "Full stack developer skills"
+      ],
+      "responses": [
+        "Web dev roadmap: HTML then CSS then JavaScript then React for frontend, then Node.js or Python Flask for backend, then MySQL for database, then Git and GitHub, then deploy on Vercel or Render.",
+        "Start with HTML and CSS to build static pages, then add JavaScript for interactivity. Once comfortable, pick React for frontend and Flask or Node.js for backend."
+      ]
+    },
+
+    {
+      "tag": "git_github",
+      "patterns": [
+        "What is Git?", "How to use GitHub?", "Git commands",
+        "How to push code to GitHub?", "What is version control?",
+        "How to create a GitHub repository?", "Git tutorial"
+      ],
+      "responses": [
+        "Git is a version control system. Key commands: git init, git add, git commit, git push. GitHub is where you store and share your code — every student needs a GitHub profile!",
+        "Start with: create a GitHub account, install Git, learn basic commands, and upload all your projects. Recruiters check GitHub profiles!"
+      ]
+    },
+
+    {
+      "tag": "aptitude",
+      "patterns": [
+        "How to prepare for aptitude?", "Aptitude tips",
+        "Quantitative aptitude for placements", "Logical reasoning tips",
+        "How to crack aptitude tests?", "Aptitude books"
+      ],
+      "responses": [
+        "For aptitude: Practice from R.S. Aggarwal, IndiaBix, and PrepInsta. Focus on percentages, time and work, profit and loss, number series, and logical reasoning. Daily 30-minute practice is enough!",
+        "Top aptitude topics: Percentages, Averages, Ratios, Time-Speed-Distance, Number Systems, Syllogisms, Blood Relations, and Coding-Decoding. Practice 10 questions daily!"
+      ]
+    },
+
+    {
+      "tag": "communication",
+      "patterns": [
+        "How to improve communication skills?", "English speaking tips",
+        "How to speak confidently?", "Public speaking tips",
+        "How to improve my English?", "Group discussion tips",
+        "How to crack GD round?"
+      ],
+      "responses": [
+        "To improve communication: Read English newspapers daily, watch English shows with subtitles, practice speaking in front of a mirror, join debate clubs, and record yourself to spot mistakes.",
+        "For GD rounds: Listen actively, speak clearly with points, use data or examples, do not interrupt others, and summarize at the end. Practice with friends every week!"
+      ]
+    },
+
+    {
+      "tag": "stress",
+      "patterns": [
+        "I am stressed about exams", "How to handle exam stress?",
+        "I am feeling overwhelmed", "Too much pressure in college",
+        "How to deal with college pressure?", "I am anxious about placements",
+        "How to stay calm?"
+      ],
+      "responses": [
+        "It is completely normal to feel stressed! Take short breaks, exercise, sleep at least 7 hours, talk to friends, and remember: one exam does not define your future. You have got this!",
+        "For exam stress: Break your syllabus into small daily goals, avoid comparing yourself to others, celebrate small wins, and do not forget to eat well and rest. Your health comes first!"
+      ]
+    },
+
+    {
+      "tag": "college_life",
+      "patterns": [
+        "Tips for college life", "How to enjoy college?",
+        "What to do in college?", "College advice for freshers",
+        "First year college tips", "How to make friends in college?"
+      ],
+      "responses": [
+        "College life tips: Join clubs and events, build genuine friendships, attend seminars and hackathons, work on side projects, and do not just focus on marks — build skills and experiences!",
+        "Make the most of college: Attend tech fests, participate in cultural events, take up leadership roles, find a mentor, and never hesitate to ask for help from seniors!"
+      ]
+    },
+
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "How to get scholarships?", "Scholarships for engineering students",
+        "Free scholarship for college", "Government scholarships India",
+        "How to apply for scholarship?", "Merit scholarship"
+      ],
+      "responses": [
+        "Top scholarships in India: National Scholarship Portal, Post-Matric scholarships, Inspire Scholarship for science, AICTE scholarships, and private scholarships from TCS, Infosys, Wipro.",
+        "To get scholarships: Maintain good academic performance, apply early on scholarships.gov.in and NSP portal, and keep all documents ready like income certificate and marksheets."
+      ]
+    },
+
+    {
+      "tag": "online_courses",
+      "patterns": [
+        "Best online courses", "Coursera vs Udemy", "Free courses online",
+        "NPTEL courses", "Best YouTube channels for learning",
+        "Free learning websites", "edX courses"
+      ],
+      "responses": [
+        "Best free platforms: NPTEL for IIT lectures, Coursera for audit-free courses, edX, MIT OpenCourseWare, Khan Academy, freeCodeCamp on YouTube, and CS50 by Harvard — completely free and world-class!",
+        "Paid but worth it: Udemy courses on sale, Scaler Academy, Newton School, and AlmaBetter for full-stack and data science. Always check for student discounts!"
+      ]
+    },
+
+    {
+      "tag": "hackathon",
+      "patterns": [
+        "What is a hackathon?", "How to participate in hackathons?",
+        "Hackathon tips", "Where to find hackathons?",
+        "Benefits of hackathons", "How to win a hackathon?"
+      ],
+      "responses": [
+        "Hackathons are coding competitions where teams build projects in 24-48 hours. Platforms to find them: Devfolio, Unstop, HackerEarth, and MLH. Great for your resume and networking!",
+        "To win hackathons: Have a clear problem statement, build an MVP quickly, make a polished demo, and practice your pitch. Even participating without winning adds great value to your resume!"
+      ]
+    },
+
+    {
+      "tag": "linkedin",
+      "patterns": [
+        "How to use LinkedIn?", "LinkedIn profile tips",
+        "LinkedIn for students", "How to build LinkedIn profile?",
+        "Should I use LinkedIn?", "LinkedIn networking tips"
+      ],
+      "responses": [
+        "LinkedIn tips: Use a professional photo, write a strong headline, add all projects and skills, get endorsements, connect with seniors and recruiters, and post about your learnings regularly!",
+        "For students: Complete your LinkedIn profile 100%, follow companies you want to work at, join alumni groups, and message seniors for referrals. Many jobs are filled through LinkedIn!"
+      ]
+    },
+
+    {
+      "tag": "certifications",
+      "patterns": [
+        "Best certifications for students", "Online certifications for placements",
+        "Free certifications", "AWS certification for students",
+        "Google certification", "Which certification is best?"
+      ],
+      "responses": [
+        "Top free certifications: Google Digital Garage, AWS Cloud Practitioner, Microsoft Azure Fundamentals, IBM via Coursera, and NPTEL with proctored exam. Add them all to LinkedIn!",
+        "Valuable certifications for placements: AWS Cloud Practitioner, Google Data Analytics, Meta Frontend Developer, and any NPTEL 8-week course with exam."
+      ]
+    },
+
+    {
+      "tag": "data_science",
+      "patterns": [
+        "How to learn data science?", "Data science for beginners",
+        "What is data science?", "Data science roadmap",
+        "Python for data science", "How to become a data scientist?"
+      ],
+      "responses": [
+        "Data Science roadmap: Python then NumPy and Pandas then Data Visualization then Machine Learning with scikit-learn then SQL then real projects then Kaggle competitions!",
+        "Data Science is analyzing large datasets to find insights. Start with Python, learn Pandas for data handling, Matplotlib for charts, then move to ML models. Kaggle is the best place to practice!"
+      ]
+    },
+
+    {
+      "tag": "interview_tips",
+      "patterns": [
+        "Interview tips", "How to crack interviews?",
+        "HR interview questions", "Technical interview tips",
+        "Tell me about yourself", "Common interview questions"
+      ],
+      "responses": [
+        "Interview tips: Research the company, practice your 30-second introduction, know your resume thoroughly, prepare 2-3 project explanations, and ask good questions at the end!",
+        "For HR round: Be honest, show enthusiasm, prepare answers for strengths and weaknesses, why this company, and where you see yourself in 5 years. Dress professionally and arrive early!"
+      ]
+    },
+
+    {
+      "tag": "salary",
+      "patterns": [
+        "How to negotiate salary?", "Fresher salary India",
+        "Average salary for freshers", "What is a good fresher salary?",
+        "How much does TCS pay freshers?", "Salary in service companies"
+      ],
+      "responses": [
+        "Average fresher salary in India: Service companies like TCS, Infosys, Wipro pay 3.5 to 4.5 LPA. Product companies like Amazon, startups pay 8 to 25 LPA. Focus on skills to target product companies!",
+        "Salary negotiation: Research market rates on Glassdoor and AmbitionBox, state your value confidently, mention your projects and skills, and always try to politely negotiate the first offer!"
+      ]
+    },
+
+    {
+      "tag": "mental_health",
+      "patterns": [
+        "I feel depressed", "I am lonely in college", "I have no friends",
+        "I am struggling mentally", "College is too hard",
+        "I feel like giving up", "I am not feeling well mentally"
+      ],
+      "responses": [
+        "I hear you, and it is okay to feel this way. College can be tough. Please talk to someone you trust — a friend, family member, or college counselor. You are not alone, and things will get better!",
+        "Your feelings are valid. Take it one day at a time. Talk to your college counseling cell, reach out to friends, and remember — asking for help is a sign of strength, not weakness."
+      ]
+    },
+
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I want to give up", "I am not good enough", "I cannot do this",
+        "I feel like a failure", "Nobody believes in me",
+        "I am falling behind", "I am demotivated", "I feel hopeless"
+      ],
+      "responses": [
+        "Do not give up! Every expert started as a beginner. Your current situation is not your final destination. Take one small step today — that is all it takes to turn things around. You have got this!",
+        "Feeling behind is normal — even the most successful people felt that way. Break your goal into tiny steps, focus on just today, and remember: progress, not perfection. I believe in you!"
+      ]
+    },
+
+    {
+      "tag": "open_source",
+      "patterns": [
+        "What is open source?", "How to contribute to open source?",
+        "Hacktoberfest", "How to start open source?",
+        "Benefits of open source contribution", "GitHub contribution"
+      ],
+      "responses": [
+        "Open source means publicly available code anyone can contribute to. Start with beginner-friendly repos on GitHub with the label good first issue, fix small bugs, and submit pull requests!",
+        "Hacktoberfest in October is a great way to start — contribute to 4 PRs and get a free T-shirt! Open source contributions look excellent on your resume and LinkedIn."
+      ]
+    },
+
+    {
+      "tag": "ai_career",
+      "patterns": [
+        "Career in AI", "AI jobs", "How to become AI engineer?",
+        "Machine learning engineer salary", "AI engineer skills",
+        "Future of AI", "Is AI a good career?"
+      ],
+      "responses": [
+        "AI and ML career path: Python then Math then ML libraries then Deep learning then Kaggle projects then Portfolio then Apply! Average fresher AI salary is 6 to 15 LPA in India.",
+        "Top AI job roles: ML Engineer, Data Scientist, NLP Engineer, Computer Vision Engineer, AI Researcher. Companies hiring: Google, Amazon, Microsoft, TCS, Infosys, and hundreds of startups!"
+      ]
+    },
+
+    {
+      "tag": "government_jobs",
+      "patterns": [
+        "Government jobs after engineering", "GATE for PSU",
+        "How to get government job?", "SSC JE for engineers",
+        "PSU jobs", "Best government jobs for BTech"
+      ],
+      "responses": [
+        "After BTech, government options: GATE score for PSUs like BHEL, ONGC, NTPC, ISRO, then UPSC Engineering Services, SSC JE, RRB JE, and state PSC exams. GATE is the most popular route!",
+        "Top PSUs via GATE: BHEL, ONGC, NTPC, ISRO, HAL, DRDO. Start GATE prep from 3rd year. A good GATE score also gets you MTech admission at IITs and NITs!"
+      ]
+    },
+
+    {
+      "tag": "startup",
+      "patterns": [
+        "How to start a startup?", "Startup tips for students",
+        "How to build a startup in college?", "Entrepreneurship tips",
+        "College startup ideas", "How to get funding for startup?"
+      ],
+      "responses": [
+        "College is the best time to start! Begin by solving a real problem, build an MVP, get feedback, and apply to incubators like IIT and IIM startup cells, NASSCOM 10000 Startups, and T-Hub.",
+        "For startup funding: Apply to college incubators, Startup India Seed Fund, and angel investors. First validate your idea with real users before worrying about funding!"
+      ]
+    },
+
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke", "Make me laugh", "Say something funny",
+        "Do you have humor?", "Be funny", "Student joke"
+      ],
+      "responses": [
+        "Why do CS students confuse Halloween and Christmas? Because Oct 31 = Dec 25! (Octal 31 = Decimal 25)",
+        "A student asked the professor: Will the exam be hard? The professor said: Only if you studied.",
+        "Why did the student eat his homework? Because the teacher said it was a piece of cake!"
+      ]
+    },
+
+    {
+      "tag": "calculator",
+      "patterns": [
+        "Calculate my CGPA", "How to calculate percentage",
+        "Calculate attendance", "What percentage is 8 CGPA?",
+        "Convert CGPA to percentage", "How to calculate marks"
+      ],
+      "responses": [
+        "CGPA to percentage: Percentage = CGPA multiplied by 9.5. So 8.0 CGPA = 76%, 7.5 CGPA = 71.25%, 9.0 CGPA = 85.5%.",
+        "Attendance formula: Classes attended divided by Total classes, then multiply by 100. If you attended 55 out of 70 classes: 55 divided by 70 times 100 = 78.5%. You need at least 75%!"
+      ]
+    },
+
+    {
+      "tag": "soft_skills",
+      "patterns": [
+        "What are soft skills?", "How to improve soft skills?",
+        "Soft skills for placements", "Leadership skills",
+        "Teamwork tips", "How to be a good team player?"
+      ],
+      "responses": [
+        "Top soft skills for placements: Communication, Teamwork, Problem-solving, Adaptability, Time management, and Leadership. Develop them through clubs, events, group projects, and internships!",
+        "Improve soft skills by joining NSS or NCC, participating in cultural events, taking up leadership roles in college clubs, and doing group projects. Companies hire for skills and attitude!"
+      ]
+    },
+
+    {
+      "tag": "weather",
+      "patterns": [
+        "What is the weather?", "How is the weather today?",
+        "Will it rain?", "Weather forecast"
+      ],
+      "responses": [
+        "I do not have access to live weather data! Check Google Weather or your phone weather app for current conditions.",
+        "I cannot check real-time weather right now — but a sunny day is a great excuse to study outside!"
+      ]
+    },
+
+    {
+      "tag": "time",
+      "patterns": [
+        "What time is it?", "Current time", "What is today date?", "What day is it?"
+      ],
+      "responses": [
+        "I do not have access to real-time data, but your phone or laptop will show the current time!",
+        "Check your device clock — I do not have live time access. But whatever time it is, it is a great time to study!"
+      ]
+    }
+
+  ]
+}
